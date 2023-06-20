@@ -475,55 +475,9 @@ spec:
           - name: KC_DB_URL_PORT
             value: "5432"
           - name: KC_HTTPS_CERTIFICATE_FILE
-            value: "-----BEGIN CERTIFICATE-----\
-            MIIDWzCCAkOgAwIBAgIJAM75mCBgfnuJMA0GCSqGSIb3DQEBCwUAMEQxCzAJBgNV\
-            BAYTAklOMQwwCgYDVQQIDAN4eHgxCzAJBgNVBAcMAnh4MQ0wCwYDVQQKDARwdXJl\
-            MQswCQYDVQQLDAJweDAeFw0yMzA2MjAwNjI5MDZaFw0zMzA2MTcwNjI5MDZaMEQx\
-            CzAJBgNVBAYTAklOMQwwCgYDVQQIDAN4eHgxCzAJBgNVBAcMAnh4MQ0wCwYDVQQK\
-            DARwdXJlMQswCQYDVQQLDAJweDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\
-            ggEBAMCaIHd0KsJmcHUkb302R1zNpvIpw4CP8aEMg9ZdxpQ/m4PczuXqtUZCF7wH\
-            Ijy2Xff2cnSzmjO/GcsGtSjOXUG6RgSSAVmsu2Chw56XlkcHJrpOEB4l3Io1GZzP\
-            RSciYBbsJ4LXC3eJC2hO5srVb8ODkRASEfnxpY3S+aNcW/sdY7JYk1Gx1HMnqAmB\
-            UFEl9IIX8fGUHkN0KpZE3Tjc15yPjsvVDo/Lx6+Z++zuTBzsIleJhCe2PpgfOrhf\
-            3jBh+frp83ew87nudHptTnnU2GGWVncD2ZNEdpwc1txeI2Q0IiDuiv10ou4b82op\
-            1S9TKinzXEu9jY+uyzK7a8+UBIMCAwEAAaNQME4wHQYDVR0OBBYEFAlY4a+TTFIU\
-            SDhR7g8oiOEOH3kJMB8GA1UdIwQYMBaAFAlY4a+TTFIUSDhR7g8oiOEOH3kJMAwG\
-            A1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAH2C7WDJZDCMm1i48tMeR+Dv\
-            w9J5CypyhTqHtiKZJ9tHse2+2ozQd9A8b+araHGML1rnoCgLLMjBVV+W0ruchYoy\
-            z1tGY/AYjS6SZT0m9sUDtf4mLCS+CGgKNSPHz0P7FxekmDf5CLT3nLcyRHnes9s+\
-            kfHSuGVk1iqHlekYhMDHwcvoPSTlFBj3twJ2bg1wKfIuELZfVmEQqn6tiBdvl2aj\
-            UEs6V/TTo6PVPb1JGkEUT57f9JwoE/mgvnS0eafOZo+GGtp4zX8q6GEIUEQOgRD7\
-            CxDd0I9Mmqw1rTOSVW4BdAdz/bTLPKYtVi6Y9m+w0pWcxy/s5ygPSsVNu3f7kPU=\
-            -----END CERTIFICATE-----"
+            value: "/tmp/certs/cert.pem"
           - name: KC_HTTPS_CERTIFICATE_KEY_FILE
-            value: "-----BEGIN PRIVATE KEY-----\
-                MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDAmiB3dCrCZnB1\
-                JG99NkdczabyKcOAj/GhDIPWXcaUP5uD3M7l6rVGQhe8ByI8tl339nJ0s5ozvxnL\
-                BrUozl1BukYEkgFZrLtgocOel5ZHBya6ThAeJdyKNRmcz0UnImAW7CeC1wt3iQto\
-                TubK1W/Dg5EQEhH58aWN0vmjXFv7HWOyWJNRsdRzJ6gJgVBRJfSCF/HxlB5DdCqW\
-                RN043Necj47L1Q6Py8evmfvs7kwc7CJXiYQntj6YHzq4X94wYfn66fN3sPO57nR6\
-                bU551NhhllZ3A9mTRHacHNbcXiNkNCIg7or9dKLuG/NqKdUvUyop81xLvY2Prssy\
-                u2vPlASDAgMBAAECggEBAIDXWfqu8l/DaV1jt1U6tzhktlZvC8J4CHrkxVjkuI+5\
-                kU3/q0Rw4z0Rv5Df8M5ObMQQz/Yzo2cUYqvHW+7lRctPUcGC7nZPr7Vv4U25OCVh\
-                qk2dJPkV+NdXuD+HBEqumzsaVUAYnSokukXX6lort61B2Qu4GuBp/4bFaIwYn8t2\
-                btYHFaH6Q5Bl5ImG6iPCx39llfdVzTUdmRfRWHreMitG+82GjjPvPEtExP89ATMA\
-                Heoy6+MFTtSlf3WH6cL7Jccxi11xw2nFllp8mTUJuwvRzzq7YDqTjqS1zYiqxuAC\
-                JBX1vlrhwMM3esxFv6zR59bJfEHisx1LH32pIDRTo+ECgYEA7YCrSA3O86I0+904\
-                v+kItHOTCrjPqyXBYRSkm+LZd75xwl2jmfxg8W8qxyQSFCXuPG/V3sIPwv71QNnc\
-                wuyb8RbAesjck/5/Q1sIhBycoba0tZF1MszUiNUld3k1guNfzNEcXC87E0DWljeY\
-                M39g6Ozx41xDkPU5nSTZCwnHG3ECgYEAz5o60RzkYa3x0gVQtjrIzQ6Nv2L5nnei\
-                2znkyIacDdKtJYpvikuM+9STnk/kxUaCYVWBK7rolxcEIA1Vzbs6crVwpKcdeg1y\
-                cxCyTwplQ1vgb99tpGkXeV0b8s2Z5mmSS9cDWoVHp0wCrGuoBopBlV9bOk6WRbAX\
-                RJnZKhdJ3TMCgYEAjG2N2NbBTPDV3y4YhfBlwzyq7qYDtDBovNwV0E47Q0AJx2DS\
-                gRPmxhpy8rhzMBKVYIrHrCSWaTeTD7tBeseoFM7dFDx7n83UtaC30lWQj1WWV90f\
-                rN/LsvREaPX0G+YRGOtzl1Yd2e52cu+AQMLKLC8dfs9o6+bzH+VPp+UqIyECgYEA\
-                mOpAoqEGdBCdC5bQsbmxCKHMtQlhVmFG+vW02COWtPPWh81lhVdK/H/DUBwHJWxf\
-                QvSpVZ2yDwBsEHPiHMzpK28MDqvtoWZgQ/Mrc97zYd89/Ql1CGJEYSe9G2ZoEvj2\
-                QpiYpsd/VPI/EeOme1LBJhZ76wHR3HjtWqF7/W30AVMCgYEAtn1pGDegkZCPoi7h\
-                vxtl5JNhnDvV463Y197tsYPKcqqObaOkDPkcz+XndfZndz8BTqPXsW3DHqCmxaom\
-                oVNnTfBbfYzirfJnuaVZkx9LYIgenIGet3QzEDyAEeCF5eMP8XbPuZM49WsxVdNs\
-                IXJrCwx0TTcjQjS5Z21q3rDbTpk=\
-                -----END PRIVATE KEY-----"
+            value: "/tmp/certs/key.pem"
           - name: KC_DB_USERNAME
             valueFrom:
               secretKeyRef:
